@@ -102,6 +102,7 @@ class FileWidget extends Component {
             ref={ref => (this.inputRef = ref)}
             id={id}
             type="file"
+            accept={this.props.options.accept}
             disabled={readonly || disabled}
             onChange={this.onChange}
             defaultValue=""
